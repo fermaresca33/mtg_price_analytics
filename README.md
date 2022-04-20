@@ -6,14 +6,15 @@ The idea behind this project is to fetch Magic The Gathering cards information (
 
 ## How to use it
 
-Take in mind that I'm not uploading the venv (virtual environment) for this project. Th reason for this is project size and the inavility of transfering it from one usuer to another.
+This will discribe how I did the setup and the configuration. By any mins is tested in multiple OS and/or version. It's just the way I solved things for my local Windows computer. Also take in mind that I'm not uploading the venv (virtual environment) for this project. This should be created and configurated in each case.
 With that in consideration, to use this you should do the following:
 
 	- Have Python installed.
 	- Install JupyterLab.
-	- Generate a virtual env in the folder to witch you copy this repository.
+	- Create a virtual env in the folder to witch you copy this repository to (py -m venv <name_for_my_env>).
+	- Activate the virtual env in the folder to witch you copy this repository to (.\<name_for_my_env>\Scripts\activate).
 	- Install Node.js in you computer(the reason for this is that once you install jupyter-dash is necessay to be able to build jupyter <it needs to in order to make full ussage of the library>).
-	- Install the following libreries to it:
+	- Install the following python libreries to the virtual env:
 		- pandas
 		- dash
 		- jupyter-dash (to be able to run dash on JupyterLab)
