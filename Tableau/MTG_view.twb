@@ -1,0 +1,3808 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.21.1217.2252                               -->
+<workbook original-version='18.1' source-build='2021.4.2 (20214.21.1217.2252)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SpecificWebTargetsForActions />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='scryfall_20220421' inline='true' name='federated.0h3j5rz0bpzufr1csiv7e1mvquaw' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='scryfall_20220421' name='textscan.1wk9pj506s14vx12jao941jyan2d'>
+            <connection class='textscan' directory='//cfs-03/datos/AIRM/SPYOM/UPRM/Data Lake/Tableau/Proyectos/MTG_test/inputs' filename='scryfall_20220421.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1wk9pj506s14vx12jao941jyan2d' name='scryfall_20220421.csv' table='[scryfall_20220421#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=';'>
+            <column datatype='string' name='card_id' ordinal='0' />
+            <column datatype='string' name='name' ordinal='1' />
+            <column datatype='string' name='set_name' ordinal='2' />
+            <column datatype='integer' name='reserved' ordinal='3' />
+            <column datatype='string' name='rarity' ordinal='4' />
+            <column datatype='string' name='normal' ordinal='5' />
+            <column datatype='real' name='usd' ordinal='6' />
+            <column datatype='real' name='usd_foil' ordinal='7' />
+            <column datatype='date' name='date_time' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1wk9pj506s14vx12jao941jyan2d' name='scryfall_20220421.csv' table='[scryfall_20220421#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=';'>
+            <column datatype='string' name='card_id' ordinal='0' />
+            <column datatype='string' name='name' ordinal='1' />
+            <column datatype='string' name='set_name' ordinal='2' />
+            <column datatype='integer' name='reserved' ordinal='3' />
+            <column datatype='string' name='rarity' ordinal='4' />
+            <column datatype='string' name='normal' ordinal='5' />
+            <column datatype='real' name='usd' ordinal='6' />
+            <column datatype='real' name='usd_foil' ordinal='7' />
+            <column datatype='date' name='date_time' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[scryfall_20220421.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>card_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[card_id]</local-name>
+            <parent-name>[scryfall_20220421.csv]</parent-name>
+            <remote-alias>card_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scryfall_20220421.csv_1DC1E24E3F7E4581901EA0E2C7B6903A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[scryfall_20220421.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scryfall_20220421.csv_1DC1E24E3F7E4581901EA0E2C7B6903A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>set_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[set_name]</local-name>
+            <parent-name>[scryfall_20220421.csv]</parent-name>
+            <remote-alias>set_name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scryfall_20220421.csv_1DC1E24E3F7E4581901EA0E2C7B6903A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reserved</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[reserved]</local-name>
+            <parent-name>[scryfall_20220421.csv]</parent-name>
+            <remote-alias>reserved</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scryfall_20220421.csv_1DC1E24E3F7E4581901EA0E2C7B6903A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rarity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rarity]</local-name>
+            <parent-name>[scryfall_20220421.csv]</parent-name>
+            <remote-alias>rarity</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scryfall_20220421.csv_1DC1E24E3F7E4581901EA0E2C7B6903A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>normal</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[normal]</local-name>
+            <parent-name>[scryfall_20220421.csv]</parent-name>
+            <remote-alias>normal</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scryfall_20220421.csv_1DC1E24E3F7E4581901EA0E2C7B6903A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>usd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[usd]</local-name>
+            <parent-name>[scryfall_20220421.csv]</parent-name>
+            <remote-alias>usd</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scryfall_20220421.csv_1DC1E24E3F7E4581901EA0E2C7B6903A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>usd_foil</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[usd_foil]</local-name>
+            <parent-name>[scryfall_20220421.csv]</parent-name>
+            <remote-alias>usd_foil</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scryfall_20220421.csv_1DC1E24E3F7E4581901EA0E2C7B6903A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_time</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date_time]</local-name>
+            <parent-name>[scryfall_20220421.csv]</parent-name>
+            <remote-alias>date_time</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[scryfall_20220421.csv_1DC1E24E3F7E4581901EA0E2C7B6903A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='scryfall_20220421.csv' datatype='table' name='[__tableau_internal_object_id__].[scryfall_20220421.csv_1DC1E24E3F7E4581901EA0E2C7B6903A]' role='measure' type='quantitative' />
+      <column caption='Card Id' datatype='string' name='[card_id]' role='dimension' type='nominal' />
+      <column caption='Date Time' datatype='date' name='[date_time]' role='dimension' type='ordinal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Normal' datatype='string' name='[normal]' role='dimension' type='nominal' />
+      <column caption='Rarity' datatype='string' name='[rarity]' role='dimension' type='nominal' />
+      <column caption='Reserved' datatype='integer' name='[reserved]' role='measure' type='quantitative' />
+      <column caption='Set Name' datatype='string' name='[set_name]' role='dimension' type='nominal' />
+      <column caption='Usd' datatype='real' name='[usd]' role='measure' type='quantitative' />
+      <column caption='Usd Foil' datatype='real' name='[usd_foil]' role='measure' type='quantitative' />
+      <column-instance column='[set_name]' derivation='None' name='[none:set_name:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:set_name:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;2019 Heroes of the Realm&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Arabian Nights&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Astral Cards&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Celebration Cards&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Commander 2015 Tokens&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Commander Anthology Tokens&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Core Set 2019 Tokens&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Dominaria&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Duel Decks: Ajani vs. Nicol Bolas&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Duel Decks: Jace vs. Vraska&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Duels of the Planeswalkers 2010 Promos&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Fallen Empires&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Friday Night Magic 2008&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Future Sight&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Guilds of Ravnica Tokens&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;IDW Comics 2013&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Ixalan&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Judge Gift Cards 2011&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Kaladesh&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;League Tokens 2014&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Magic 2010 Promos&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Magic Online Theme Decks&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Masters 25 Tokens&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Modern Event Deck 2014 Tokens&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Mystery Booster Playtest Cards 2019&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Onslaught&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Premium Deck Series: Fire and Lightning&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Rise of the Eldrazi Promos&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Scourge&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Streets of New Capenna Tokens&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Theros Beyond Death&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Ultimate Masters Tokens&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Vanguard Series&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;XLN Standard Showdown&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Zendikar Rising Expeditions&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Amonkhet&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Arena League 2003&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Beatdown Box Set&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Commander 2011 Oversized&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Commander 2019 Tokens&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Conflux Tokens&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Dark Ascension Tokens&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Duel Decks Anthology: Divine vs. Demonic&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Duel Decks: Garruk vs. Liliana&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Duel Decks: Sorin vs. Tibalt&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;European Land Program&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Friday Night Magic 2000&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;From the Vault: Dragons&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Global Series Jiang Yanggu &amp; Mu Yanling&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Homelands&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Innistrad: Double Feature&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Judge Gift Cards 1998&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Judge Gift Cards 2003&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Judgment&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Kamigawa: Neon Dynasty&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Love Your LGS 2020&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Magic 2014 Promos&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Magic Player Rewards 2008&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Mirage&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Modern Masters 2017 Tokens&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;New Phyrexia Promos&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Planechase Planes&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Ravnica: City of Guilds&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;San Diego Comic-Con 2017&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Shards of Alara Promos&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Tempest Promos&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Time Spiral Remastered Tokens&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Unstable Tokens&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Wizards Play Network 2009&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Year of the Ox 2021&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Amonkhet Tokens&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Arena New Player Experience&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Born of the Gods&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Commander 2014 Oversized&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Commander 2021&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Conspiracy: Take the Crown&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Deckmasters&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Duel Decks Anthology: Garruk vs. Liliana&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Duel Decks: Izzet vs. Golgari&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Duel Decks: Venser vs. Koth Tokens&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Exodus&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Friday Night Magic 2004&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;From the Vault: Realms&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Guildpact&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Ice Age&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Innistrad: Midnight Hunt Tokens&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Judge Gift Cards 2007&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Jumpstart: Historic Horizons&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Khans of Tarkir Promos&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;M19 Gift Pack&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Magic 2015 Promos&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;MagicFest 2019&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mirrodin Besieged Tokens&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Morningtide Tokens&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Oath of the Gatewatch&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Portal Demo Game&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Return to Ravnica Promos&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Saviors of Kamigawa Promos&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Signature Spellbook: Jace&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Tenth Edition Tokens&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Two-Headed Giant Tournament&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Urza&apos;s Legacy&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Wizards Play Network 2021&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;World Championship Decks 1999&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Zendikar Promos&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Urza&apos;s Saga&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Adventures in the Forgotten Realms Minigames&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Archenemy: Nicol Bolas Schemes&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Battle for Zendikar&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Chronicles&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Commander 2017&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Commander Collection: Green&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Core Set 2021&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Double Masters Tokens&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Duel Decks: Divine vs. Demonic Tokens&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Duel Decks: Merfolk vs. Goblins&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Duels of the Planeswalkers 2015 Promos&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Fate Reforged Tokens&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Friday Night Magic 2012&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Game Night 2019&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;HarperPrism Book Promos&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Ikoria: Lair of Behemoths Tokens&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Journey into Nyx Hero&apos;s Path&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Judge Gift Cards 2015&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Kaladesh Tokens&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Legends&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Magic 2011 Tokens&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Magic Origins Tokens&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Masters Edition IV&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Modern Horizons 2 Promos&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Mythic Edition Tokens&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Planar Chaos&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Pro Tour Promos&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Rivals of Ixalan Tokens&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Seventh Edition&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Strixhaven: School of Mages Substitute Cards&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Theros Promos&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Unhinged&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;War of the Spark&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;World Championship Decks 2003&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Zendikar Rising Tokens&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;2020 Heroes of the Realm&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Archenemy&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Avacyn Restored&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Champions of Kamigawa&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Commander 2016&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Commander Anthology Volume II&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Core Set 2020&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Dominaria Promos&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Duel Decks: Ajani vs. Nicol Bolas Tokens&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Duel Decks: Jace vs. Vraska Tokens&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Duels of the Planeswalkers 2012 Promos&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Fate Reforged&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Friday Night Magic 2009&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Future Sight Promos&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Guru&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;IDW Comics 2014&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Ixalan Promos&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Judge Gift Cards 2012&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Kaladesh Inventions&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;League Tokens 2015&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Magic 2010 Tokens&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Magic Origins&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Masters Edition&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Modern Horizons&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Mystery Booster Playtest Cards 2021&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Onslaught Promos&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Premium Deck Series: Graveborn&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Rise of the Eldrazi Tokens&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Scourge Promos&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Strixhaven Mystical Archive&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Theros Beyond Death Promos&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Unfinity&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Vintage Championship&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;World Championship Decks 2000&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Zendikar Rising Minigames&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;2017 Gift Pack&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Anthologies&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Arena New Player Experience Cards&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Born of the Gods Hero&apos;s Path&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Commander 2014 Tokens&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Commander 2021 Display Commanders&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Conspiracy: Take the Crown Tokens&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Defeat a God&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Duel Decks Anthology: Garruk vs. Liliana Tokens&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Duel Decks: Izzet vs. Golgari Tokens&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Duel Decks: Zendikar vs. Eldrazi&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Exodus Promos&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Friday Night Magic 2005&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;From the Vault: Relics&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Guildpact Promos&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Iconic Masters&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Intl. Collectors’ Edition&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Judge Gift Cards 2008&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Junior APAC Series&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Khans of Tarkir Tokens&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;M19 Standard Showdown&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Magic 2015 Tokens&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;MagicFest 2020&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Mirrodin Promos&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;MTG Arena Promos&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Oath of the Gatewatch Promos&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Portal Second Age&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Return to Ravnica Tokens&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Scars of Mirrodin&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Starter 1999&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;The Dark&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Ugin&apos;s Fate&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Urza&apos;s Legacy Promos&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Wizards Play Network 2022&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Zendikar Rising&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Alara Reborn&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Alchemy: Kamigawa&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Arena League 2001&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Battlebond Promos&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Commander 2011&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Commander 2019&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Conflux&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Dark Ascension&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Dragons of Tarkir Promos&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Duel Decks: Elves vs. Inventors&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Duel Decks: Phyrexia vs. the Coalition&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Eternal Masters&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Forgotten Realms Commander Tokens&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;From the Vault: Angels&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Gateway 2007&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Historic Anthology 4&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Innistrad: Crimson Vow Substitute Cards&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Judge Gift Cards 2001&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Judge Gift Cards 2021&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Kaldheim Substitute Cards&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Lorwyn Promos&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Magic 2013 Tokens&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Magic Player Rewards 2006&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Midnight Hunt Commander Display Commanders&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Modern Masters 2015 Tokens&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;New Capenna Commander&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Planechase Anthology Planes&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Ravnica Allegiance Promos&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;San Diego Comic-Con 2014&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Shadows over Innistrad Tokens&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Tarkir Dragonfury&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Time Spiral Promos&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Unstable&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Worldwake Tokens&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;15th Anniversary Cards&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Amonkhet Invocations&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Arena League 2004&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Betrayers of Kamigawa&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Commander 2013&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Commander 2020&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Conspiracy&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Darksteel&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Duel Decks Anthology: Divine vs. Demonic Tokens&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Duel Decks: Garruk vs. Liliana Tokens&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Duel Decks: Sorin vs. Tibalt Tokens&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Eventide&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Friday Night Magic 2001&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;From the Vault: Exiled&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Grand Prix Promos&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Hour of Devastation&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Innistrad: Midnight Hunt&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Judge Gift Cards 2004&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Jumpstart&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Kamigawa: Neon Dynasty Promos&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Love Your LGS 2021&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Magic 2014 Tokens&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Magic Player Rewards 2009&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Mirrodin&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Modern Masters Tokens&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;New Phyrexia Tokens&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Planeshift&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Ravnica: City of Guilds Promos&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;San Diego Comic-Con 2018&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Shards of Alara Tokens&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Tempest Remastered&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Time Spiral Timeshifted&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;URL/Convention Promos&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Wizards Play Network 2010&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Year of the Tiger 2022&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Aether Revolt Promos&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Alara Reborn Tokens&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Arena League 1999&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Battle the Horde&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Coldsnap Theme Decks&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Commander 2018 Oversized&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Commander&apos;s Arsenal&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Crimson Vow Commander Display Commanders&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Dragon&apos;s Maze Tokens&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Duel Decks: Elves vs. Goblins&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Duel Decks: Mirrodin Pure vs. New Phyrexia&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Eldritch Moon Promos&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Forgotten Realms Commander&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Friday Night Magic 2016&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Gatecrash Tokens&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Historic Anthology 2&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Innistrad: Crimson Vow&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Judge Gift Cards 1999&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Judge Gift Cards 2019&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Kaldheim Minigames&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Magic 2013&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Magic Player Rewards 2004&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;MicroProse Promos&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Modern Masters&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Neon Dynasty Commander&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Planechase 2012 Planes&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Prophecy Promos&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;RNA Ravnica Weekend&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Shadows over Innistrad&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Summer Magic / Edgar&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Throne of Eldraine Tokens&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Unsanctioned&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Welcome Deck 2016&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Worldwake&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;2017 Heroes of the Realm&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Antiquities&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Arena New Player Experience Extras&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Born of the Gods Promos&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Commander 2015&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Commander 2021 Tokens&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Core Set 2019&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Dissension&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Duel Decks Anthology: Jace vs. Chandra&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Duel Decks: Jace vs. Chandra&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Duels of the Planeswalkers&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Explorers of Ixalan&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Friday Night Magic 2006&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;From the Vault: Transform&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Guilds of Ravnica&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Iconic Masters Tokens&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Introductory Two-Player Set&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Judge Gift Cards 2009&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Junior Series Europe&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;League Tokens 2012&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;M20 Promo Packs&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Magic Online Avatars&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;MagicFest 2021&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Miscellaneous Book Promos&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Multiverse Gift Box&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Oath of the Gatewatch Tokens&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Portal Three Kingdoms&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Revised Edition&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Scars of Mirrodin Promos&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Starter 2000&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;The List&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Ultimate Box Topper&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Wizards of the Coast Online Store&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;World Championship Decks 1997&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Zendikar Rising Commander&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Adventures in the Forgotten Realms Promos&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Archenemy: Nicol Bolas Tokens&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Battle for Zendikar Promos&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Classic Sixth Edition&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Commander 2017 Oversized&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Commander Legends&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Core Set 2021 Promos&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Dragon Con&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Duel Decks: Elspeth vs. Kiora&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Duel Decks: Merfolk vs. Goblins Tokens&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Eighth Edition&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Fifth Dawn&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Friday Night Magic 2013&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Game Night 2019 Tokens&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;HasCon 2017&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Innistrad&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Journey into Nyx Promos&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Judge Gift Cards 2016&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Kaldheim&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Legions&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Magic 2012&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Magic Player Rewards 2001&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Media Inserts&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Modern Horizons 2 Tokens&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Nationals Promos&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Planar Chaos Promos&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Promotional Planes&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Rivals Quick Start Set&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Shadowmoor&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Strixhaven: School of Mages Tokens&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Theros Tokens&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Unhinged Promos&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;War of the Spark Promos&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;World Championship Decks 2004&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Zendikar Tokens&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Adventures in the Forgotten Realms Tokens&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Arena Beginner Set&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Battle for Zendikar Tokens&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Coldsnap&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Commander 2017 Tokens&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Commander Legends Tokens&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Core Set 2021 Tokens&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Dragon&apos;s Maze&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Duel Decks: Elspeth vs. Tezzeret&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Duel Decks: Mind vs. Might&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Eighth Edition Promos&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Fifth Dawn Promos&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Friday Night Magic 2014&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Gatecrash&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Heads I Win, Tails You Lose&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Innistrad Promos&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Journey into Nyx Tokens&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Judge Gift Cards 2017&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Kaldheim Commander&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Legions Promos&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Magic 2012 Promos&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Magic Player Rewards 2002&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Mercadian Masques&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Modern Horizons Promos&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Nemesis&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Planechase&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Promotional Schemes&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;RNA Guild Kit&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Shadowmoor Promos&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Stronghold&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Throne of Eldraine&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Universes Within&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;War of the Spark Tokens&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;World Championship Promos&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Aether Revolt Tokens&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Alchemy: Innistrad&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Arena League 2000&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Battlebond&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Collectors’ Edition&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Commander 2018 Tokens&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Commander&apos;s Arsenal Oversized&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Crimson Vow Commander Tokens&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Dragons of Tarkir&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Duel Decks: Elves vs. Goblins Tokens&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Duel Decks: Nissa vs. Ob Nixilis&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Eldritch Moon Tokens&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Forgotten Realms Commander Display Commanders&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Friday Night Magic 2017&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Gateway 2006&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Historic Anthology 3&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Innistrad: Crimson Vow Promos&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Judge Gift Cards 2000&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Judge Gift Cards 2020&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Kaldheim Promos&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Lorwyn&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Magic 2013 Promos&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Midnight Hunt Commander&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Modern Masters 2015&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Neon Dynasty Commander Tokens&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Planechase Anthology&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Ravnica Allegiance&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;San Diego Comic-Con 2013&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Shadows over Innistrad Promos&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Summer of Magic&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Time Spiral&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Unsanctioned Tokens&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Welcome Deck 2017&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Worldwake Promos&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Alliances&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Arena League 2002&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Battlebond Tokens&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Commander 2011 Launch Party&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Commander 2019 Oversized&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Conflux Promos&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Dark Ascension Promos&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Dragons of Tarkir Tokens&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Duel Decks: Elves vs. Inventors Tokens&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Duel Decks: Phyrexia vs. the Coalition Tokens&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Eternal Masters Tokens&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Fourth Edition&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;From the Vault: Annihilation&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Gateway 2008&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Historic Anthology 5&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Innistrad: Crimson Vow Tokens&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Judge Gift Cards 2002&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Judge Gift Cards 2022&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Kaldheim Tokens&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Lorwyn Tokens&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Magic 2014&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Magic Player Rewards 2007&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Midnight Hunt Commander Tokens&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Modern Masters 2017&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;New Phyrexia&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Planechase Anthology Tokens&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Ravnica Allegiance Tokens&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;San Diego Comic-Con 2016&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Shards of Alara&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Tempest&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Time Spiral Remastered&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Unstable Promos&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Wizards Play Network 2008&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Archenemy Schemes&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Avacyn Restored Promos&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Champions of Kamigawa Promos&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Commander 2016 Oversized&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Commander Anthology Volume II Tokens&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Core Set 2020 Promos&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Dominaria Tokens&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Duel Decks: Blessed vs. Cursed&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Duel Decks: Knights vs. Dragons&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Duels of the Planeswalkers 2013 Promos&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Fate Reforged Clash Pack&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Friday Night Magic 2010&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Game Day Promos&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Hachette UK&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Ikoria: Lair of Behemoths&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Ixalan Tokens&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Judge Gift Cards 2013&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Kaladesh Promos&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Limited Edition Beta&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Magic 2011&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Magic Online Promos&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Magic Origins Clash Pack&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Masters Edition II&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Modern Horizons 1 Timeshifts&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Mystery Booster Retail Edition Foils&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Open the Helvault&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Premium Deck Series: Slivers&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Rivals of Ixalan&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Secret Lair Drop&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Strixhaven: School of Mages&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Theros Beyond Death Tokens&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Unglued&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Vintage Masters&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;World Championship Decks 2001&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Zendikar Rising Promos&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2018 Heroes of the Realm&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Apocalypse&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Asia Pacific Land Program&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Born of the Gods Tokens&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Commander 2015 Oversized&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Commander Anthology&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Core Set 2019 Promos&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Dissension Promos&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Duel Decks Anthology: Jace vs. Chandra Tokens&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Duel Decks: Jace vs. Chandra Tokens&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Duels of the Planeswalkers 2009 Promos&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Face the Hydra&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Friday Night Magic 2007&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;From the Vault: Twenty&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Guilds of Ravnica Promos&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;IDW Comics 2012&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Invasion&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Judge Gift Cards 2010&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Junior Super Series&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;League Tokens 2013&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Magic 2010&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Magic Player Rewards 2005&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Masters 25&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Modern Event Deck 2014&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Mystery Booster&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Odyssey&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Portal: Three Kingdoms Promos&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Rise of the Eldrazi&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Scars of Mirrodin Tokens&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Streets of New Capenna&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Theros&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Ultimate Masters&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Urza&apos;s Saga Promos&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;World Championship Decks 1998&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Zendikar Rising Commander Tokens&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Amonkhet Promos&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Arena League 2005&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Betrayers of Kamigawa Promos&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Commander 2013 Oversized&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Commander 2020 Oversized&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Conspiracy Promos&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Darksteel Promos&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Duel Decks Anthology: Elves vs. Goblins&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Duel Decks: Heroes vs. Monsters&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Duel Decks: Speed vs. Cunning&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Eventide Promos&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Friday Night Magic 2002&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;From the Vault: Legends&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;GRN Guild Kit&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Hour of Devastation Promos&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Innistrad: Midnight Hunt Promos&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Judge Gift Cards 2005&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Jumpstart Arena Exclusives&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Kamigawa: Neon Dynasty Tokens&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Legacy Championship&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Lunar New Year 2018&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Magic 2015&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Magic Player Rewards 2010&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Mirrodin Besieged&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Morningtide&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Ninth Edition&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Ponies: The Galloping&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Resale Promos&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;San Diego Comic-Con 2019&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Signature Spellbook: Chandra&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Tenth Edition&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Torment&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Urza&apos;s Destiny&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Wizards Play Network 2011&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Zendikar&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Aether Revolt&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Alara Reborn Promos&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Arena League 1996&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Battle Royale Box Set&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Coldsnap Promos&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Commander 2018&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Commander Legends: Battle for Baldur&apos;s Gate&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Crimson Vow Commander&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Dragon&apos;s Maze Promos&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Duel Decks: Elspeth vs. Tezzeret Tokens&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Duel Decks: Mind vs. Might Tokens&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Eldritch Moon&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Fifth Edition&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Friday Night Magic 2015&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Gatecrash Promos&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Historic Anthology 1&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Innistrad Tokens&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Judge Gift Cards 2018&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Kaldheim Commander Tokens&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Limited Edition Alpha&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Magic 2012 Tokens&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Magic Player Rewards 2003&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Mercadian Masques Promos&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Modern Horizons Tokens&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Nemesis Promos&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Planechase 2012&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Prophecy&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;RNA Guild Kit Tokens&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Shadowmoor Tokens&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Stronghold Promos&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Throne of Eldraine Promos&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Unlimited Edition&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Weatherlight&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;World Magic Cup Qualifiers&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Adventures in the Forgotten Realms&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Archenemy: Nicol Bolas&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Avacyn Restored Tokens&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Champs and States&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Commander 2016 Tokens&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Commander Collection: Black&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Core Set 2020 Tokens&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Double Masters&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Duel Decks: Divine vs. Demonic&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Duel Decks: Knights vs. Dragons Tokens&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Duels of the Planeswalkers 2014 Promos&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Fate Reforged Promos&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Friday Night Magic 2011&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Game Night&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Happy Holidays&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Ikoria: Lair of Behemoths Promos&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Journey into Nyx&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Judge Gift Cards 2014&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Kaladesh Remastered&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Legendary Cube Prize Pack&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Magic 2011 Promos&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Magic Origins Promos&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Masters Edition III&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Modern Horizons 2&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Mythic Edition&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Pioneer Challenger Decks 2021&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Pro Tour Collector Set&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Rivals of Ixalan Promos&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Secret Lair: Ultimate Edition&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Strixhaven: School of Mages Promos&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Theros Hero&apos;s Path&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Unglued Tokens&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Visions&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;World Championship Decks 2002&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Zendikar Rising Substitute Cards&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;2016 Heroes of the Realm&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Amonkhet Remastered&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Arena League 2006&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;BFZ Standard Series&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Commander 2014&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Commander 2020 Tokens&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Conspiracy Tokens&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;DCI Legend Membership&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Duel Decks Anthology: Elves vs. Goblins Tokens&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Duel Decks: Heroes vs. Monsters Tokens&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Duel Decks: Venser vs. Koth&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Eventide Tokens&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Friday Night Magic 2003&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;From the Vault: Lore&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;GRN Ravnica Weekend&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Hour of Devastation Tokens&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Innistrad: Midnight Hunt Substitute Cards&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Judge Gift Cards 2006&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Jumpstart Front Cards&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Khans of Tarkir&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;M15 Prerelease Challenge&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Magic 2015 Clash Pack&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Magic Player Rewards 2011&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Mirrodin Besieged Promos&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Morningtide Promos&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Ninth Edition Promos&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Portal&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Return to Ravnica&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Saviors of Kamigawa&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Signature Spellbook: Gideon&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Tenth Edition Promos&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Treasure Chest&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Urza&apos;s Destiny Promos&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Wizards Play Network 2012&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Zendikar Expeditions&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='scryfall_20220421.csv' id='scryfall_20220421.csv_1DC1E24E3F7E4581901EA0E2C7B6903A'>
+            <properties context=''>
+              <relation connection='textscan.1wk9pj506s14vx12jao941jyan2d' name='scryfall_20220421.csv' table='[scryfall_20220421#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=';'>
+                  <column datatype='string' name='card_id' ordinal='0' />
+                  <column datatype='string' name='name' ordinal='1' />
+                  <column datatype='string' name='set_name' ordinal='2' />
+                  <column datatype='integer' name='reserved' ordinal='3' />
+                  <column datatype='string' name='rarity' ordinal='4' />
+                  <column datatype='string' name='normal' ordinal='5' />
+                  <column datatype='real' name='usd' ordinal='6' />
+                  <column datatype='real' name='usd_foil' ordinal='7' />
+                  <column datatype='date' name='date_time' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Hipervínculo1' name='[Action1_2170A755EC6D41D4B84F2724F8F04324]'>
+      <activation type='on-hover' />
+      <source dashboard='mtg_dashboard' type='sheet' worksheet='images_urls' />
+      <link caption='' expression='&lt;[normal]&gt;'>
+        <url-action-type>specific-zone</url-action-type>
+        <url-action-target>22</url-action-target>
+      </link>
+    </action>
+    <datasources>
+      <datasource caption='scryfall_20220421' name='federated.0h3j5rz0bpzufr1csiv7e1mvquaw' />
+    </datasources>
+    <datasource-dependencies datasource='federated.0h3j5rz0bpzufr1csiv7e1mvquaw'>
+      <column caption='Normal' datatype='string' name='[normal]' role='dimension' type='nominal' />
+    </datasource-dependencies>
+  </actions>
+  <worksheets>
+    <worksheet name='images_urls'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='scryfall_20220421' name='federated.0h3j5rz0bpzufr1csiv7e1mvquaw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h3j5rz0bpzufr1csiv7e1mvquaw'>
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[normal]' derivation='None' name='[none:normal:nk]' pivot='key' type='nominal' />
+            <column-instance column='[set_name]' derivation='None' name='[none:set_name:nk]' pivot='key' type='nominal' />
+            <column caption='Normal' datatype='string' name='[normal]' role='dimension' type='nominal' />
+            <column caption='Set Name' datatype='string' name='[set_name]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:name:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:name:nk]' member='&quot;Replenish&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:set_name:nk]' filter-group='4'>
+            <groupfilter function='member' level='[none:set_name:nk]' member='&quot;Urza&apos;s Destiny&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:set_name:nk]</column>
+            <column>[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='648' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:normal:nk]' value='8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:normal:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='8'>&lt;</run>
+                <run fontsize='8'>[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:normal:nk]</run>
+                <run fontsize='8'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{6A43B475-CD56-47F0-8D95-7A8BD34EE411}' />
+    </worksheet>
+    <worksheet name='individual_card_graph'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='scryfall_20220421' name='federated.0h3j5rz0bpzufr1csiv7e1mvquaw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h3j5rz0bpzufr1csiv7e1mvquaw'>
+            <column caption='Date Time' datatype='date' name='[date_time]' role='dimension' type='ordinal' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[set_name]' derivation='None' name='[none:set_name:nk]' pivot='key' type='nominal' />
+            <column caption='Set Name' datatype='string' name='[set_name]' role='dimension' type='nominal' />
+            <column-instance column='[usd]' derivation='Sum' name='[sum:usd:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[usd_foil]' derivation='Sum' name='[sum:usd_foil:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date_time]' derivation='Day-Trunc' name='[tdy:date_time:qk]' pivot='key' type='quantitative' />
+            <column caption='Usd' datatype='real' name='[usd]' role='measure' type='quantitative' />
+            <column caption='Usd Foil' datatype='real' name='[usd_foil]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:name:nk]' filter-group='3'>
+            <groupfilter function='member' level='[none:name:nk]' member='&quot;Replenish&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:set_name:nk]' filter-group='4'>
+            <groupfilter function='member' level='[none:set_name:nk]' member='&quot;Urza&apos;s Destiny&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:name:nk]</column>
+            <column>[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:set_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[tdy:date_time:qk]' value='*dd/mm/yyyy' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:set_name:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[sum:usd:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:set_name:nk]' />
+              <text column='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[sum:usd:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>U$D &lt;</run>
+                <run>[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[sum:usd:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='8' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[sum:usd_foil:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:set_name:nk]' />
+              <text column='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[sum:usd_foil:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>U$D &lt;</run>
+                <run>[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[sum:usd_foil:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='8' />
+                <format attr='font-weight' value='bold' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[sum:usd:qk] + [federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[sum:usd_foil:qk])</rows>
+        <cols>[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[tdy:date_time:qk]</cols>
+      </table>
+      <simple-id uuid='{D9FA96CD-C008-4954-976E-F5DA45F4DACF}' />
+    </worksheet>
+    <worksheet name='price_table'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='scryfall_20220421' name='federated.0h3j5rz0bpzufr1csiv7e1mvquaw' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h3j5rz0bpzufr1csiv7e1mvquaw'>
+            <column caption='Date Time' datatype='date' name='[date_time]' role='dimension' type='ordinal' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[date_time]' derivation='None' name='[none:date_time:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[rarity]' derivation='None' name='[none:rarity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[set_name]' derivation='None' name='[none:set_name:nk]' pivot='key' type='nominal' />
+            <column caption='Rarity' datatype='string' name='[rarity]' role='dimension' type='nominal' />
+            <column caption='Set Name' datatype='string' name='[set_name]' role='dimension' type='nominal' />
+            <column-instance column='[usd]' derivation='Sum' name='[sum:usd:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[usd_foil]' derivation='Sum' name='[sum:usd_foil:qk]' pivot='key' type='quantitative' />
+            <column caption='Usd' datatype='real' name='[usd]' role='measure' type='quantitative' />
+            <column caption='Usd Foil' datatype='real' name='[usd_foil]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[sum:usd:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[sum:usd_foil:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:date_time:ok]'>
+            <groupfilter function='member' level='[none:date_time:ok]' member='#2022-04-17#' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:set_name:nk]' filter-group='4'>
+            <groupfilter function='member' level='[none:set_name:nk]' member='&quot;Urza&apos;s Destiny&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:set_name:nk]' direction='ASC' measure-to-sort-by='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[sum:usd:qk]' shelf='rows' />
+            <shelf-sort-v2 dimension-to-sort='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:name:nk]' direction='DESC' measure-to-sort-by='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[sum:usd:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[:Measure Names]</column>
+            <column>[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:set_name:nk]</column>
+            <column>[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:date_time:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-format' field='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[sum:usd_foil:qk]' value='n#,##0.00;-#,##0.00' />
+            <format attr='text-format' field='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[Multiple Values]' value='n#,##0.00;-#,##0.00' />
+            <format attr='width' field='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[:Measure Names]' value='77' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:set_name:nk]' value='216' />
+            <format attr='width' field='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:name:nk]' value='204' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[sum:usd:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[sum:usd:qk]' num-steps='6' palette='red_green_gold_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <color column='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[sum:usd:qk]' />
+              <text column='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:name:nk] / ([federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:set_name:nk] / [federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:rarity:nk]))</rows>
+        <cols>[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{0C132BD3-7017-4F0F-9C1A-1BA29A964F36}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='mtg_dashboard'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='scryfall_20220421' name='federated.0h3j5rz0bpzufr1csiv7e1mvquaw' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0h3j5rz0bpzufr1csiv7e1mvquaw'>
+        <column caption='Date Time' datatype='date' name='[date_time]' role='dimension' type='ordinal' />
+        <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+        <column-instance column='[date_time]' derivation='None' name='[none:date_time:ok]' pivot='key' type='ordinal' />
+        <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+        <column-instance column='[set_name]' derivation='None' name='[none:set_name:nk]' pivot='key' type='nominal' />
+        <column caption='Set Name' datatype='string' name='[set_name]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97790' id='7' param='horz' type-v2='layout-flow' w='98848' x='576' y='1105'>
+            <zone h='97790' id='5' type-v2='layout-basic' w='81785' x='576' y='1105'>
+              <zone h='43785' id='3' name='price_table' w='54716' x='576' y='1105'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='48895' id='12' name='individual_card_graph' w='81785' x='576' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone forceUpdate='' h='43785' id='22' param='https://c1.scryfall.com/file/scryfall-cards/normal/front/7/f/7fd2fe13-bbc0-42b7-bc42-3b51910ce118.jpg?1562444251' type-v2='web' w='27069' x='55292' y='1105'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5110' id='25' name='images_urls' show-title='false' w='81785' x='576' y='44890'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='237' h='97790' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='17063' x='82361' y='1105'>
+              <zone h='7182' id='9' mode='dropdown' name='price_table' param='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:date_time:ok]' show-apply='true' type-v2='filter' w='17063' x='82361' y='1105'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7182' id='10' mode='checkdropdown' name='price_table' param='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:set_name:nk]' show-apply='true' type-v2='filter' values='relevant' w='17063' x='82361' y='8287'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='220' h='31492' id='14' is-fixed='true' type-v2='empty' w='17063' x='82361' y='15469'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7182' id='15' mode='dropdown' name='individual_card_graph' param='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:name:nk]' show-apply='true' type-v2='filter' values='relevant' w='17063' x='82361' y='46961'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6354' id='13' name='individual_card_graph' pane-specification-id='3' param='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:set_name:nk]' type-v2='color' w='17063' x='82361' y='54143'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1150' minheight='1150' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='31' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97790' id='30' param='vert' type-v2='layout-flow' w='98848' x='576' y='1105'>
+                <zone h='7182' id='9' mode='dropdown' name='price_table' param='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:date_time:ok]' show-apply='true' type-v2='filter' w='17063' x='82361' y='1105'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7182' id='10' mode='checkdropdown' name='price_table' param='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:set_name:nk]' show-apply='true' type-v2='filter' values='relevant' w='17063' x='82361' y='8287'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43785' id='3' is-fixed='true' name='price_table' w='54716' x='576' y='1105'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' forceUpdate='' h='43785' id='22' is-fixed='true' param='https://c1.scryfall.com/file/scryfall-cards/normal/front/7/f/7fd2fe13-bbc0-42b7-bc42-3b51910ce118.jpg?1562444251' type-v2='web' w='27069' x='55292' y='1105'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='33' h='5110' id='25' is-fixed='true' name='images_urls' show-title='false' w='81785' x='576' y='44890'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7182' id='15' mode='dropdown' name='individual_card_graph' param='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:name:nk]' show-apply='true' type-v2='filter' values='relevant' w='17063' x='82361' y='46961'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48895' id='12' is-fixed='true' name='individual_card_graph' w='81785' x='576' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6354' id='13' name='individual_card_graph' pane-specification-id='3' param='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:set_name:nk]' type-v2='color' w='17063' x='82361' y='54143'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{16CFEC51-FA66-47BD-8F0D-979510C30E7E}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='price_table' tab-color='#17927d'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card mode='dropdown' param='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:date_time:ok]' show-apply='true' type='filter' />
+            <card mode='checkdropdown' param='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:set_name:nk]' show-apply='true' type='filter' values='relevant' />
+            <card pane-specification-id='0' param='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[sum:usd:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[md:date_time:ok]</field>
+            <field>[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:date_time:ok]</field>
+            <field>[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:name:nk]</field>
+            <field>[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:rarity:nk]</field>
+            <field>[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:set_name:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7010848A-441B-40B2-BA10-001DAB3161F4}' />
+    </window>
+    <window class='worksheet' name='individual_card_graph' tab-color='#72bcbb'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card mode='dropdown' param='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:name:nk]' show-apply='true' type='filter' values='relevant' />
+            <card pane-specification-id='3' param='[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:set_name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[:Measure Names]</field>
+            <field>[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:set_name:nk]</field>
+            <field>[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[yr:date_time:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{8FD7EF32-4734-4E88-9C46-2583763A8342}' />
+    </window>
+    <window class='worksheet' name='images_urls'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:normal:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{53E37887-D697-4F30-B086-6F48514CFEBE}' />
+    </window>
+    <window class='dashboard' maximized='true' name='mtg_dashboard'>
+      <viewpoints>
+        <viewpoint name='images_urls' />
+        <viewpoint name='individual_card_graph'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.0h3j5rz0bpzufr1csiv7e1mvquaw].[none:set_name:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='price_table' />
+      </viewpoints>
+      <active id='6' />
+      <simple-id uuid='{37FCA6B5-17EE-4B81-B1F8-B47986720AAF}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='24' name='images_urls' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='individual_card_graph' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAASDUlEQVR4nO3daXNb133H8e9dABIkwB1cxV0SJUqiFNuKZdf12HHGdZrMZJJmJk0zfdCZ
+      Tp/0SV+C30KnT/sgM4mfdDqdxlFcx3a0RKqphVoo7vsG7iABYr0A7tIHjtg2FmmRAihI9/+Z
+      wQwJAQeH1Pnx3HPuOfcqjuM4COFS6vOugBDPk/74C8MwSKfTeS38ceeiKEpeyxUiX5RCHQJZ
+      lkUikcDr9aLr+je/QYjn4NAt086muTc8Tt/ZPlYXxlnfMmhtrWExtMmJ3j5qA6VomoamaXg8
+      nnzWWYi8OfQYQPX6aGkMguPQfKydmtpq4obFa+dOEYtF81lHIQrm0D2AlU2ztLhAKqsRWZkk
+      UHcMr2MyPDlD/bHuZ6qUtTZEbuwynp7vgV7yTGWJl5xtkhu/jNZyEbWy5cBvP/QYwLEtUqk0
+      iuZBcUwsG3xlpWSMLD6fD0Vhdwzg9XoPVHbm5j+TvfuvqPWnUPTSw1RPuIRj5bDXR1AqmlD9
+      DQd+f8EGwXD4ADi5NPb2LGqwB5AZJLE/e3MCtaoNPL4Dv7fg5wEW5zZYXl0lur7ALz76d9YW
+      x/n15c/YSWVxbJORR4NkLYeJB4MkLZtMbJ370+toDWewcwYDj8ZQVE0eLn4sLYQwU1GWt6J8
+      9MtfsR7e4PLHv2FxM4aiaoQiBtuWj9GHw2RVjcTWMiPzGyiqhpne4d7o9J5lFzwAt2+O8XD4
+      ETe//JLKykoWxu/Qfe4cn/zmKlY2w/TUfdK5HAsDo0RMixvXbjA+PwuOw/3b/TwcGy90FUWR
+      u3Wjn3R4hms3b7JqeEmHp/HVd/Hlf31C1obo/B3mImlmb40Qt3P0X7/O0HwIHIf+L+8wPjW2
+      Z9kFD4CRXSca2eH8K6+zMnyV2c0M4c0wHl8Jiqah2haxWBpPqUpkc5nllQ3GhseJJ6IshFaZ
+      m54kmTELXU1R1DJMzy/T1H6G1tIIt4amiW6HcXQPimLj8ZSSjMbQvA7roTlWwxGmxidJxDZZ
+      WlljdGwS07KfWHLBxwCR9SUMvYpgmUX/4AxvfusEE/ObnOs7i5qNM/hojNrGRrY31ymrauLM
+      iVbC4Q2Gx+d5588vEYlGqK6qLlQVxQsgGd1gKhTldFcDv7/ez5/92SWmxyfpOHWW2goPg3fu
+      U1rmYTueoaaxnZ62IJubq4zNb/P2pQv7tqGiHAQLcVRkMZxwNQmAcLVnWgt099EIF859i5nx
+      B0TTKu1NARZXtug+3Ud9VVk+6ylEQRw6AKrXR2tzI+BQ4q/mZMBmIaty8cIZlrZjWIESLMvC
+      sixyuVweqyxE/hw6AGYmydTkONuNJqS3WDNU2hoD3H04Queps7srQWU1qChmMgskXE0GwcLV
+      JADC1SQAwtUkAMLVJADC1SQAwtUkAMLVJADC1SQAwtUkAMLV8hKAtaVZRifnMZJRHg2NkjGf
+      vP1MiGKTl4t2hrd3cGyNmeUMnceCrG5s0dZYi+M42LaNZVn5+Bgh8i4/h0AKKLZJTv7wixdM
+      XnqA2soA22mFntZapuZW6TnVg6qqKIqCqqpompaPjxEi72Q5tHA1mQUSriYBEK4mARCuJgEQ
+      riYBEK4mARCuJgEQrrbHibAc/VevEQrHUJQSfvCTHyA3KhIvoz16AA9vvPsWXkeBjIFcnV+8
+      rPY5BPJy/sIJFH8F33SVTyMRYXx6ASuXZmpqFqtg55aFyK991gIZXPvPy5j1vcSByn0KmZxZ
+      4ETPaeZnZ6mqDBBa36KtoWb33wu42kKIZ7JHALL84XfXCXSforKxhYpvKMRIRHg0cBu1uolj
+      /nIS0Sy2be8uhVYUudOjKE57BMDDG9/5Lo4Dtz77PXHYNwRtbW2sbht0NlUwNLnA6TNfXRz3
+      8UpQuTiuKFZ7BMDk7o3rRI0cJdUNBL6hkMbWbhpbv/r6tZqD36xYiOdFlkMLV5MTYcLVJADC
+      1SQAwtUkAMLVJADC1SQAwtUkAMLVJADC1SQAwtXyEgDTiHHt5h3Cy3Pcun2HrbiRj2KFKLi8
+      LIWYmZzAsGxKvB46mupZiqRoawzuLoXQ9bxcgVGIvMtDy8yRjMVYXN/geFcnQxPTNLQdR9O0
+      3YesBhXFKm+L4SzLQlXAyOQoLS1FUWQxnCh+eTs2eXwFaJ9PrgQtXhwyCyRcTQIgXE0CIFxN
+      AiBcTQIgXE0CIFxNAiBcTQIgXE0CIFwtL2eC56dGCe+YdLXXMjW/yumz56nwyfofUfzyshbI
+      NnPMTM9i6hrHm4OEttO0NclqUFH88tIyJ8eGqW3pIhZeYXUjjO6rkdWg4oWQlzFAVU0N8Z0o
+      xzq6UD1ltNRX56NYIQpOrg0qXE1mgYSrSQCEq0kAhKtJAISrSQCEq0kAhKvlNQCObZFIJJG7
+      oooXRV4DsDQ3xezMFCtbsXwWK0TB5DUAWXR6T3SRzaTyWawQBZPXAFT7dAaGJ6isqMpnsUIU
+      jCyFEK62uxrUMAzS6XReCzcMA13XZTm0KFrSAwhXk/MAwtWK8tjEjq9iLd5C7/4OaNJ7iH3Y
+      Fub0F2jNF1D8DQd+e1EGIPvgI3L3foHi/xdQZTeZ2Idt4iTWoSSAUlJx4LcXZQC8F/4GtaYL
+      vesdFOkBxH5sE3PmCmpTH6q/8cBvL/ggOJM28ZbpeBWLgUdTXOjtJLQepbOzE49isbC4THPr
+      MTZCC5TXtaBld4ibHlrqa4hHNkhaXhrr5LyCm8WiMcrLPKRMGHn4gHPn+1gOhWhs7aSizMva
+      0gK+mgai68tUN7ZhJcJkNT8NtRVEN1fJ6X6C1YEnll3wHuDTj+9S1WbjxLeIZstRo0OEvScZ
+      mVrlfIvK2PIWw2NLBGt1JgaGSS6O0PfOj2kJ+vnkN7/DUeH7P/1bAnIk5FqffvwJH7zdxa8f
+      rDI/v0ltwOTWSAR1YJi//uElPr05Qm32CtVdXdx8MERkcZZL7/+YhhoPv738BY5X56c/+xme
+      J0z5FHwWyLRTZI00r3z7TRLLg4SiNt09J8nGEzR3nCC3s0IklmJ6cpb3332L0ooGZsYfgGOh
+      aAFq/BqmXehaimJmOTkSySTBtrOcrLUYmlqkub0br5XD8jXQVpFlYzPC7Nwq775+nsqGY0wM
+      3wM7h15Sg7/Ewd7jOKfgAeg7G6CusRvHiKPXneD1Vy8yNjDAe997G03X8VW185fvnUMv8TCz
+      uMGlV09zqvccn125zcVX2gi0v0KVDANc7Z23X+XBssLr7T5iWY3XLr5FfHmcC+98hxJNxeP1
+      8NYPPkD3aqzs2PR1N9J7+iSf3xjlfG8Nrb2X8O7R0o/uRJjjYDsOqvrNmXMcB9u2d+87JsRj
+      tm0/XRuybWxA+4bXHt0skKKgKspTvlSRxi+e6GkaP4CiqjxNC5IzwcLVJADC1Q59CJRL7fBo
+      bIry6gY8mQjbhkpXUwVTC+v0nOmj2l+Sz3oKURCHDoBjWZiWjWlZ6J4y2r0287Esr53rYSkS
+      ocIXxLIsLMsil8vls85C5M2hA5DJpPH5K8kkk6BkiOdUKqtKmZpfpCLYKleHFi+EQwcgUNtE
+      uxbFWxZAc3JkLIXyUg878SRVlZX5rKMQBSMbYoSrySyQcDUJgHA1CYBwNQmAcDUJgHA1CYBw
+      NQmAcDUJgHA1CYBwNQmAcDUJgHA1CYBwtWfaE5w10jiaBw0b04YSj0bayOLz+XjK7b9CPFeH
+      DoCZivBobIHWjk42l6ZIZRTq6sqJxVLUtx6nue7g12kU4qgdOgDJWJyclWV9I0xZoIqGgMOi
+      pXC+5zhLkRSWVS47wkTRO/yGmJpafKthVEXBNuLMGhqdjX4GhiY40XtOdoSJF8IeG2JsErEE
+      luMAKoHKwKFGy7IhRhS7PXoAi4d3+gnHU9iOj+/9+AN8R1svIY7EHn/YPZzu66OxuoLygF/m
+      SsVLa8+2XVtfzdraFttrq1hHWSMhjtA+g2CdikofTs6LHMGLl9Ueg+AUw4OraGqGnnO9hz4E
+      kkGwKHZ79AA2g7dvEDUSTMyG+OCH71N6tPUS4kjs0QM4WNb/3pZF1TQOs7JBegBR7PboAUzu
+      /fdVhqfW0VWdv/q7n1F+tPUS4kjsOQ367bffpbm2DI+35KluNCDEi2ifWSCN1954g6m5NeRC
+      5+Jltc8ET5pPfvVLBofmiB1dfYQ4Unv0AFlufPYHSlo6aG7rQBY2i5fVHgHw8OZ77wPQ/7vP
+      iYOEQLyU9ghAji+vXCGSzuIJBHnyTeYhHd8ilvXiNXfYMlTa6wNMzq5w8tRJPJpsCRPF79D3
+      B3Aci6nJh+SsBlQljg+HuKrSWldNNKPR3lS7ex5A9gOIYnXoDTE7awusbMbI5aC12Y+Og4WK
+      R9dxDAvHcf7fQ4hi9Ix3iMmwuZnBNsJsZTQ66/1MzK3S03san0eTM8Gi6MktkoSryV4X4WoS
+      AOFqEgDhahIA4WoSAOFqEgDhahIA4WoSAOFqEgDhahIA4WoSAOFqEgDhahIA4WqHv0VSJsno
+      2ATeiiAlZozttEp3U4CJ+TVOnT1PZZlsghHF7xl2hDmkdrbZiGexMgkqcFiyVfqOBQltp2lr
+      Cu4uh9b1Z7oXnxAF80w3yZtcXKezs53l+Q02TAW/30todQM9EJRbJIkXwqEDoHjKqKvyk8lk
+      6ersIGmq1PhLWA9HaQhW5bGKQhSO7AgTriazQMLVJADC1SQAwtUkAMLVJADC1SQAwtUkAMLV
+      JADC1SQAwtUkAMLV8hqAtcVp+vtvsbGTymexQhRMXgOQNBUuXuglmZDb6okXQ14DUKqY3H04
+      is/nz2exQhSMrAYVrra7H8AwDNLpdF4LNwwDXdfRdR3btlHVr3c4T3r+cSYVRfna83/63H6v
+      P8hn7vf8kz53r7rk4zML/fMc9HdeLHUpRBlH1gPs13if9Eu3bRtN0772PDz9f9JBPnO/uhTT
+      Zz6Pn6dQdTlMHZ9UhmmaX9t2+7RlFOUh0F6VF+JJ9grG0yjK3erS8MVBPEt7eS4nwsxsisG7
+      AyQzGUaGBrnyhy8x7a/+6odCy098T2R9jWTOPMpqiiKxujTL1FyItcVpBu7eYTn8eJo9RSgU
+      +drr04kdtiLxpyr7ufQAureMY0112GoJp3u6KVneQVMVRgcHWI7myMXWuDOywHt/8X1y4Wmu
+      3Z/hzW/1sr60RFVdHVuLy5x+9SJV5SXPo/riiDW2dLAYCqE4DqZlAxDdWGJqcYkyX5B7t78g
+      2HmWMy0+Pr1+l29feoO1pUUqgkGMrU2O9fTRUPPkqfnnEoCcEWdyepoKs4QqUjQ1d6AA2VwO
+      r0cnZzm0tbfj9SiE4ymClX6ypoWmadi2RXPbcWn8LrK8MM3M/AqNwVpKvBrJtIGXLJrHi2Ln
+      KK9uoKGmgkh0m5aWIKmE8VVbcWxqG9v2bPzwnAbBjmNjmhaKqqIqCoqqogC2ZWE7oGkKpmmj
+      6xqOY2PboKoKlmXtjvZlnOAelmliOw6apmFZX7ULAMuyUFUNx7ZAUVEVsP44zWlbFqquo7B/
+      WynKWSAhjoqsBhWuJgEQriYBEAWTTuywFFomZzmkE3Fyf5zBeSybTpKznP/zfYLFpRDGPtPd
+      tmWyElpkaXkVy9776D00NcTgxPzu98lk8k9e4ZBMJtE+/PDDDw/yQx1ENpvdvUCucJ/7n31O
+      rFRjcHAaKx1F13W2YykqAuVkEjvc/O3HKC3d7Kyt4K+sZHGkn4n1NCOjEzTVlLO1k2b0xlUi
+      pRV4s3Fihk15qYfxuzdYSHpwUtuousb6+ibpjEGpR2FxeYOKygoWxsfp6D3LRmgePD4+/+Q/
+      qAwew7EyJGM7zC2vMPRwsDjPBIuXg4KH7jPnWJu8zKrtJRlZpf/RLH//j//ErWvX8Ggad65+
+      yk54g0vf/Ql+VaP9eC9Tt6/w8P4tbo2EeK25Hr8G//bRL1CCp/iHn/+IlqYWSsqbWR0fYHp2
+      Ak8qw0KulWr/IuGVHb77o58DkEtFuHH99ziBDkoduHH1KoqS4PVL7zC7tIJOkS6FEC+HQI2P
+      /s+/oKP3PNmddVLRTY53d6AqUFvlJxQyOH6yjXV/NY01ZViWjwd3rtPaeYrU2hgnuto50d3M
+      3MoWXSdOUdZ4AgBveQB/qQenpgaf6lCrKniMegJlKuXlWWrKvSQBM2vgr2vBH6ggsx3GLK2h
+      vqaZ9qYgK5sRNDMr06Di5TRx7yaJ8mO8eqpj39dJAISr/Q+rYR5o6ru8pQAAAABJRU5ErkJg
+      gg==
+    </thumbnail>
+    <thumbnail height='192' name='mtg_dashboard' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='price_table' width='192'>
+      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
+      RK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
