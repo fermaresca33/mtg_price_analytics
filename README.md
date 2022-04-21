@@ -22,6 +22,8 @@ With that in consideration, to use this you should do the following:
 
 Also is important to start jupyterlab from the directory location and with the environment active first.
 
-## Credits
+## Credits and Links
+
+
 
 	
