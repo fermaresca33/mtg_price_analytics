@@ -22,6 +22,19 @@ With that in consideration, to use this you should do the following:
 
 Also is important to start jupyterlab from the directory location and with the environment active first.
 
+## Information Visualization
+
+A part from the dash interactive visualizations and plots I did a `Tableau version` (I believe that for this things is a little bit more powerful),
+so you can see a tsate of the information. The link can be found below:
+
+https://public.tableau.com/views/MTG_view/mtg_dashboard?:language=es-ES&:display_count=n&:origin=viz_share_link
+
+An example of the Tableau Dashboard can be seen in the following image:
+
+<p align="center">
+  <img src="./documentation_files/tableau_public_dashboard.png">
+</p>
+
 ## Credits and Links
 
 
