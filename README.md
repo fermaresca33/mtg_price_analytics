@@ -28,7 +28,9 @@ A part from the dash interactive visualizations and plots I did a `Tableau versi
 so you can see a tsate of the information. 
 
 The link can be found below:
+
 https://public.tableau.com/views/MTG_view/mtg_dashboard?:language=es-ES&:display_count=n&:origin=viz_share_link
+
 or just by opening the Tableau Public project in `./tableau_public/`
 
 
