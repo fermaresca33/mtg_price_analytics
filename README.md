@@ -25,9 +25,12 @@ Also is important to start jupyterlab from the directory location and with the e
 ## Information Visualization
 
 A part from the dash interactive visualizations and plots I did a `Tableau version` (I believe that for this things is a little bit more powerful),
-so you can see a tsate of the information. The link can be found below:
+so you can see a tsate of the information. 
 
+The link can be found below:
 https://public.tableau.com/views/MTG_view/mtg_dashboard?:language=es-ES&:display_count=n&:origin=viz_share_link
+or just by opening the Tableau Public project in `./tableau_public/`
+
 
 An example of the Tableau Dashboard can be seen in the following image:
 
