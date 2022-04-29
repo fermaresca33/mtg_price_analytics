@@ -1,5 +1,7 @@
 #Folders
 myenv
+venv
+jpenv
 
 #Jupyter notebooks
 .ipynb_checkpoints
