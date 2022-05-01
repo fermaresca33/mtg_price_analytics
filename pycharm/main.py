@@ -7,6 +7,7 @@ import sys
 
 #Local files
 from tables_optimization import *
+from log import RollingLogger
 
 #Setup
 #---------------------------------------------
@@ -87,18 +88,25 @@ def save_cards_to_local_db(cards_df):
     conn = connect_to_sqlite_db("../sqlite_db/mtg_cards.db")
 
     #Load pandas dataframe into scryfall_cards table. Append Because it will add new prices each day.
-    prices_df.to_sql(name="scryfall_daily_prices", con=conn, if_exists="append", index=False)
+    row_num = prices_df.to_sql(name="scryfall_daily_prices", con=conn, if_exists="append", index=False)
+    logger.LOG.info(f"{datetime.now().strftime('%Y%m%d %H:%M:%S')}: {row_num} append to scryfall_daily_prices table")
     #Load pandas dataframe into scryfall_cards table. Replace existing because it's static info.
-    cards_static_info_df.to_sql(name="scryfall_cards", con=conn, if_exists="replace", index=False)
+    row_num = cards_static_info_df.to_sql(name="scryfall_cards", con=conn, if_exists="replace", index=False)
+    logger.LOG.info(f"{datetime.now().strftime('%Y%m%d %H:%M:%S')}: {row_num} replaced in scryfall_cards table")
 
     #Close connection
     disconnect_from_sqlite_db(conn)
 
 if __name__ == '__main__':
+    #Let's start the logger
+    logger = RollingLogger(max_log_files=5)
+    logger.LOG.info(f"{datetime.now().strftime('%Y%m%d %H:%M:%S')}: MTG Price Fetcher")
+
     #Get the api response for accessing the bulk data.
     api_response = get_bulk_data('https://api.scryfall.com/bulk-data/default-cards')
     if api_response.status_code != 200: #should be 200=ok
         print("Failled to get the api response")
+        logger.ERROR.info(f"{datetime.now().strftime('%Y%m%d %H:%M:%S')}: Failled to get the api response")
         sys.exit()
 
     #Obtain cards dataframe from the response
@@ -107,4 +115,4 @@ if __name__ == '__main__':
     save_cards_to_local_db(cards_bulk_df)
 
     #Clean and optimize database.
-    table_optimization_analyses(month_window=3)
+    table_optimization_analyses(logger, month_window=3)

@@ -90,18 +90,19 @@ def number_of_full_months(unique_day_list):
 
     return full_month
 
-def save_to_month_db_table(month_dataframe):
+def save_to_month_db_table(month_dataframe, logger):
     #Connect to local DB
     conn = connect_to_sqlite_db("../sqlite_db/mtg_cards.db")
 
     #Load pandas dataframe into scryfall_monthly_prices table. Append Because it will add new prices each month
-    month_dataframe.to_sql(name="scryfall_monthly_prices", con=conn, if_exists="append", index=False)
+    row_num = month_dataframe.to_sql(name="scryfall_monthly_prices", con=conn, if_exists="append", index=False)
+    logger.LOG.info(f"{datetime.now().strftime('%Y%m%d %H:%M:%S')}: {row_num} append to scryfall_monthly_prices table")
 
     #Close connection
     disconnect_from_sqlite_db(conn)
     return
 
-def drop_oldest_month(start_date, end_date):
+def drop_oldest_month(start_date, end_date, logger):
     #Connect to local DB
     conn = connect_to_sqlite_db("../sqlite_db/mtg_cards.db")
 
@@ -124,10 +125,12 @@ def drop_oldest_month(start_date, end_date):
     #Close connection
     disconnect_from_sqlite_db(conn)
 
+    logger.WARNING.info(f"{datetime.now().strftime('%Y%m%d %H:%M:%S')}: Information between {start_date} "
+                    f"and {end_date} was deleted from scryfall_daily_prices table.")
     print(f"Information between {start_date} and {end_date} was deleted from scryfall_daily_prices table.")
     return
 
-def compact_oldest_month(daily_df, year_month_list, month_window):
+def compact_oldest_month(daily_df, year_month_list, month_window, logger):
     #year_month: '202204'
     year_month_list.sort()
     month_list = [int(x[4:]) for x in year_month_list]
@@ -151,16 +154,17 @@ def compact_oldest_month(daily_df, year_month_list, month_window):
 
         #Store the compact month in the month db table
         month_df2.drop('month_num', axis=1, inplace=True)
-        save_to_month_db_table(month_df2)
+        save_to_month_db_table(month_df2, logger)
 
         #Once compact is done we drop the month data from the daily table
-        drop_oldest_month(get_month_first_day(year_month_list[mun]), get_month_last_day(year_month_list[mun]))
+        drop_oldest_month(get_month_first_day(year_month_list[mun]),
+                          get_month_last_day(year_month_list[mun]), logger)
 
         #print(month_df2.head(10))
         #month_df2.to_csv("test/compact.csv", sep=";")
     return
 
-def monthly_compacting(month_window):
+def monthly_compacting(month_window, logger):
 
     #Get all the daily cards info currently available
     all_daily_df = get_cards_daily_data()
@@ -170,15 +174,18 @@ def monthly_compacting(month_window):
     month_list = number_of_full_months(all_daily_df['date_time'].unique())
     #Check if compacting is needed
     if len(month_list) < month_window + 1:
+        logger.LOG.info(f"{datetime.now().strftime('%Y%m%d %H:%M:%S')}: No need for monthly optimization.")
         #Not yet enough data
         return
 
     #Let's compact and save to the monthly table
-    compact_oldest_month(all_daily_df, month_list, month_window)
+    logger.LOG.info(f"{datetime.now().strftime('%Y%m%d %H:%M:%S')}: Monthly optimizarion is needed.")
+    logger.LOG.info(f"{datetime.now().strftime('%Y%m%d %H:%M:%S')}: {len(month_list)} month of daily data found.")
+    compact_oldest_month(all_daily_df, month_list, month_window, logger)
     return
 
 
-def table_optimization_analyses(month_window=3, annual_window=1):
+def table_optimization_analyses(logger, month_window=3, annual_window=1):
     #Evaluate possible monthly compacting of daily data.
-    monthly_compacting(month_window)
+    monthly_compacting(month_window, logger)
     return
