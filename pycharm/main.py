@@ -2,8 +2,11 @@
 import requests
 import pandas as pd
 from datetime import datetime
-
 import sqlite3
+import sys
+
+#Local files
+from tables_optimization import *
 
 #Setup
 #---------------------------------------------
@@ -60,16 +63,6 @@ def df_general_clean(cards_df):
                       axis=1, inplace=True)
     return cards_df_flt
 
-def connect_to_sqlite_db(db_path):
-    #Generates (or creates if it doesn't exist) the db connection.
-    conn = sqlite3.connect(db_path)
-    return conn
-
-def disconnect_from_sqlite_db(conn):
-    #Close connection
-    conn.close()
-    return
-
 def save_cards_to_local_db(cards_df):
     #Perform a general clean before storage
     clean_cards_df = df_general_clean(cards_df)
@@ -104,9 +97,14 @@ def save_cards_to_local_db(cards_df):
 if __name__ == '__main__':
     #Get the api response for accessing the bulk data.
     api_response = get_bulk_data('https://api.scryfall.com/bulk-data/default-cards')
-    print(api_response.status_code)  #should be 200=ok
+    if api_response.status_code != 200: #should be 200=ok
+        print("Failled to get the api response")
+        sys.exit()
 
     #Obtain cards dataframe from the response
     cards_bulk_df = get_cards_dataframe(api_response)
 
     save_cards_to_local_db(cards_bulk_df)
+
+    #Clean and optimize database.
+    table_optimization_analyses(month_window=3)
