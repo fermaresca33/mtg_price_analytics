@@ -1,0 +1,4 @@
+2022-05-01 15:51:46,527 | Severity = INFO | Message = 20220501 15:51:46: MTG Price Fetcher
+2022-05-01 15:52:40,539 | Severity = INFO | Message = 20220501 15:52:40: 64300 append to scryfall_daily_prices table
+2022-05-01 15:52:43,911 | Severity = INFO | Message = 20220501 15:52:43: 64300 replaced in scryfall_cards table
+2022-05-01 15:52:45,890 | Severity = INFO | Message = 20220501 15:52:45: No need for monthly optimization.

@@ -99,7 +99,7 @@ def save_cards_to_local_db(cards_df):
 
 if __name__ == '__main__':
     #Let's start the logger
-    logger = RollingLogger(max_log_files=5)
+    logger = RollingLogger(max_log_files=10)
     logger.LOG.info(f"{datetime.now().strftime('%Y%m%d %H:%M:%S')}: MTG Price Fetcher")
 
     #Get the api response for accessing the bulk data.
